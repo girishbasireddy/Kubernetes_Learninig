@@ -8,3 +8,13 @@ Control Plane Components  :
                                                            Job controller: Watches for Job objects that represent one-off tasks, then creates Pods to run those tasks to completion.
                                                             Endpoints controller: Populates the Endpoints object (that is, joins Services & Pods).
                                                             Service Account & Token controllers: Create default accounts and API access tokens for new namespaces
+                                                            
+Node Components  :  
+                                 kubelet : An agent that runs on each node in the cluster. It makes sure that containers are running in a Pod
+                                 kube-proxy : kube-proxy is a network proxy that runs on each node in your cluster, implementing part of the Kubernetes Service concept.
+                                 Container runtime : The container runtime is the software that is responsible for running containers.
+                                 
+
+                                 
+
+
