@@ -62,3 +62,24 @@ Namespaces             ::
    Not All Objects are in a Namespace  ::   namespace resources are not themselves in a namespace. And low-level resources, such as nodes and persistentVolumes, are not in any namespace.
                                             # Not in a namespace
                                           kubectl api-resources --namespaced=false
+                                          
+                                          
+    labels and Slectors ::   
+                             kubectl get pods -l environment=production,tier=frontend
+                           or using set-based requirements:
+
+                                kubectl get pods -l 'environment in (production),tier in (frontend)'
+
+                               Resources that support set-based requirements
+                              Newer resources, such as Job, Deployment, ReplicaSet, and DaemonSet, support set-based
+
+
+                                Finalizers are namespaced keys that tell Kubernetes to wait until specific conditions are met before it fully deletes resources marked for deletion. Finalizers alert controllers to clean up resources the deleted object owned
+                                
+                               Dependent objects have a metadata.ownerReferences field that references their owner object 
+                                
+                                
+                                
+                                
+
+
