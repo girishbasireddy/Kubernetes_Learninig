@@ -1,0 +1,9 @@
+Nodes
+                         The components on a node include the kubelet, a container runtime, and the kube-proxy.
+
+                         Node status   ::
+                         
+                                 Addresses  :: The usage of these fields varies depending on your cloud provider or bare metal configuration.
+                                 The conditions :: field describes the status of all Running nodes. Examples of conditions include:
+                                 Capacity and Allocatable  :: Describes the resources available on the node: CPU, memory, and the maximum number of pods that can be scheduled onto the node.
+                                 Info    :: 
